@@ -6,3 +6,8 @@ record metrics from tc, netfilter, conntrack, ethtool
 
 ## Conntrack collection command
 `cat /proc/net/nf_conntrack`
+
+## TC collection command
+- `tc -s filter show dev dev_name ingress`
+- `tc -s filter show dev dev_name egress`
+This might change given nics and / or use of TC
